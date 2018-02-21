@@ -193,7 +193,7 @@ void reverse(struct node** head_ref) {
    *head_ref = prev;
 }
 
-main() {
+int main() {
 
    insertFirst(1,10);
    insertFirst(2,20);
