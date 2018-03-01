@@ -3,20 +3,20 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-struct node
+struct a
 {
    int data;
    int key;
-   struct node *next;
+   struct a *next;
 };
 
-struct node *head = NULL;
-struct node *current = NULL;
+struct a *head = NULL;
+struct a *current = NULL;
 
 //hien thi danh sach
 void printList()
 {
-   struct node *ptr = head;
+   struct a *ptr = head;
    printf("\n[ ");
 
    //bat dau tu phan dau danh sach
@@ -33,7 +33,7 @@ void printList()
 void insertFirst(int key, int data)
 {
    //tao mot link
-   struct node *link = (struct node*) malloc(sizeof(struct node));
+   struct a *link = (struct a*) malloc(sizeof(struct a));
 
    link->key = key;
    link->data = data;
@@ -44,7 +44,7 @@ void insertFirst(int key, int data)
    //tro first toi first node moi
    head = link;
 }
-
+/*
 //xoa phan tu dau tien
 struct node* deleteFirst()
 {
@@ -192,7 +192,7 @@ void reverse(struct node** head_ref) {
 
    *head_ref = prev;
 }
-
+*/
 int main() {
 
    insertFirst(1,10);
@@ -206,7 +206,7 @@ int main() {
 
    //in danh sach
    printList();
-
+/*
    while(!isEmpty()){
       struct node *temp = deleteFirst();
       printf("\nGia tri bi xoa:");
@@ -258,4 +258,6 @@ int main() {
    reverse(&head);
    printf("\nDanh sach sau khi bi dao nguoc: ");
    printList();
+*/
+    return 0;
 }

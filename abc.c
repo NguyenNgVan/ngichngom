@@ -15,7 +15,7 @@ int main()
         *(p2+i) = *(p2+i-1);
     *(p2+k) = m;
     printf("\nMang sau khi chen:");
-    for(i=0;i<=n;i++)
+    for(i=0;i<n+1;i++)
         printf("%2d",*(p2+i));
     return 0;
 }
